@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nusantara News</title>
+
+    <!--font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!---css style-->
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+  <body>
+    <a href="admin.html"></a>
+    <header>
+      <img src="nn.png" width="60px" />
+
+      <div class="inputSearch desktop">
+        <form id="searchForm">
+          <input type="text" placeholder="Type to search..." id="searchInput" />
+          <span> <i class="fa-solid fa-search"></i></span>
+        </form>
+      </div>
+      <nav class="desktop">
+        <ul>
+          <li onclick="Search('HOME')">HOME</li>
+          <li onclick="Search('tech')">Tech</li>
+          <li onclick="Search('food')">Olahraga</li>
+          <li onclick="Search('movies')">Otomotif</li>
+          <li onclick="Search('business')">Ekonomi</li>
+          <li><a href="admin.html"><i class="fa-solid fa-user-shield"></i> Admin</a></li>
+        </ul>
+      </nav>
+
+      <div class="menuBtn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+      <!------>
+      <div class="mobile hidden">
+        <nav>
+          <ul>
+            <li onclick="Search('HOME')">HOME</li>
+            <li onclick="Search('tech')">Tech</li>
+            <li onclick="Search('food')">Olahraga</li>
+            <li onclick="Search('movies')">Otomotif</li>
+            <li onclick="Search('business')">Ekonomi</li>
+          </ul>
+        </nav>
+        <div class="inputSearch">
+        <form id="searchFormMobile" id="searchInputMobile">
+          <input type="text" placeholder="Type to search..." />
+          <span> <i class="fa-solid fa-search"></i></span>
+        </div>
+        </form>
+      </div>
+    </header>
+    <body>
+      <div>
+        <h1> Nusantara News </h1>
+        
+      </div>
+
+    </body>
+
+    <!-- main  -->
+
+    <main>
+      <div class="news-container">
+        <div class="news-item">
+            <img src="lava-pijar-gunung-merapi_169.jpeg">
+            <h2>Efek Gunung Merapi</h2>
+            <p>Wired - 12/4/2023</p>
+            <p>Pusat Vulkanologi dan Mitigasi Bencana Geologi (PVMBG) menganggap Gunung Merapi di Jawa Tengah ini merusakkan rumah-rumah dengan jarak luncur maksimum 7.000 meter menjauh ke Kali Bebeng...</p>
+        </div>
+        <div class="news-item">
+            <img src="sabah-fc-vs-psm-makassar_43.png">
+            <h2>PSM KALAHKAN SABAH 3-1</h2>
+            <p>Kantor-bola - 12/15/2023</p>
+            <p>PSM dengan mengejutkan menumbangkan sabah 3-1 pada partai final</p>
+        </div>
+        <div class="news-item">
+          <img src="lava-pijar-gunung-merapi_169.jpeg">
+          <h2>Efek Gunung Merapi</h2>
+          <p>Wired - 12/4/2023</p>
+          <p>Pusat Vulkanologi dan Mitigasi Bencana Geologi (PVMBG) menganggap Gunung Merapi di Jawa Tengah ini merusakkan rumah-rumah dengan jarak luncur maksimum 7.000 meter menjauh ke Kali Bebeng...</p>
+      </div>
+      <div class="news-item">
+          <img src="sabah-fc-vs-psm-makassar_43.png">
+          <h2>PSM KALAHKAN SABAH 3-1</h2>
+          <p>Kantor-bola - 12/15/2023</p>
+          <p>PSM dengan mengejutkan menumbangkan sabah 3-1 pada partai final</p>
+      </div>
+      <div class="news-item">
+        <img src="lava-pijar-gunung-merapi_169.jpeg">
+        <h2>Efek Gunung Merapi</h2>
+        <p>Wired - 12/4/2023</p>
+        <p>Pusat Vulkanologi dan Mitigasi Bencana Geologi (PVMBG) menganggap Gunung Merapi di Jawa Tengah ini merusakkan rumah-rumah dengan jarak luncur maksimum 7.000 meter menjauh ke Kali Bebeng...</p>
+    </div>
+    <div class="news-item">
+        <img src="sabah-fc-vs-psm-makassar_43.png">
+        <h2>PSM KALAHKAN SABAH 3-1</h2>
+        <p>Kantor-bola - 12/15/2023</p>
+        <p>PSM dengan mengejutkan menumbangkan sabah 3-1 pada partai final</p>
+    </div>
+    </div>
+        <!-- Add more news cards here -->
+    </div>
+    </main>
+
+    <script src="script.js"></script>
+    <footer>
+      <div class="footer-container">
+          <div class="platforms">
+              <h3>Platform</h3>
+              <ul>
+                  <li>Android</li>
+                  <li>iOS</li>
+                  <li>MacOS</li>
+                  <li>web</li>
+                  <li>Windows</li>
+              </ul>
+          </div>
+          <div class="contact">
+              <p>Email: nusantara_news@gmail.com</p>
+              <p>Phone: 0812-4034-0030</p>
+          </div>
+          <div class="branding">
+              <h2>Nusantara News</h2>
+              <p>berita terkini, wawasan terbaik</p>
+          </div>
+      </div>
+  </footer>
+  
+  </body>
+  
+</html>
